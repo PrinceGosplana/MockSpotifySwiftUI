@@ -22,7 +22,7 @@ struct HomeView: View {
                     .background(.spotifyWhite)
                     .clipShape(Circle())
                     .onTapGesture {
-
+                        
                     }
 
                 ScrollView(.horizontal) {
@@ -32,6 +32,9 @@ struct HomeView: View {
                                 title: category.title,
                                 isSelected: category == selectedCategory
                             )
+                            .onTapGesture {
+                                selectedCategory = category
+                            }
                         }
                     }
                 }
