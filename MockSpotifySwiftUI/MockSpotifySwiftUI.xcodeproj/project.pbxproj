@@ -12,6 +12,7 @@
 		8A2CA0032C27FF0300E3C019 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8A2CA0022C27FF0300E3C019 /* Assets.xcassets */; };
 		8A2CA0062C27FF0300E3C019 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8A2CA0052C27FF0300E3C019 /* Preview Assets.xcassets */; };
 		8A2CA0102C2801B300E3C019 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A2CA00F2C2801B300E3C019 /* HomeView.swift */; };
+		8A2CA0122C28051C00E3C019 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A2CA0112C28051C00E3C019 /* User.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,6 +22,7 @@
 		8A2CA0022C27FF0300E3C019 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8A2CA0052C27FF0300E3C019 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		8A2CA00F2C2801B300E3C019 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		8A2CA0112C28051C00E3C019 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +61,7 @@
 				8A2CA0002C27FF0100E3C019 /* ContentView.swift */,
 				8A2CA0022C27FF0300E3C019 /* Assets.xcassets */,
 				8A2CA0042C27FF0300E3C019 /* Preview Content */,
+				8A2CA0112C28051C00E3C019 /* User.swift */,
 			);
 			path = MockSpotifySwiftUI;
 			sourceTree = "<group>";
@@ -156,6 +159,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8A2CA0122C28051C00E3C019 /* User.swift in Sources */,
 				8A2CA0102C2801B300E3C019 /* HomeView.swift in Sources */,
 				8A2CA0012C27FF0100E3C019 /* ContentView.swift in Sources */,
 				8A2C9FFF2C27FF0100E3C019 /* MockSpotifySwiftUIApp.swift in Sources */,
