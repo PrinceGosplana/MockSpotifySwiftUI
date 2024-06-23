@@ -15,15 +15,18 @@ struct HomeView: View {
         ZStack {
             Color.spotifyBlack.ignoresSafeArea()
 
-            HStack {
-                Image(User.mockUser.image)
-                    .resizable()
-                    .frame(width: 30, height: 30)
-                    .background(.spotifyWhite)
-                    .clipShape(Circle())
-                    .onTapGesture {
-                        
-                    }
+            HStack(spacing: 0) {
+                ZStack {
+                    Image(User.mockUser.image)
+                        .resizable()
+                        .frame(width: 35, height: 35)
+                        .background(.spotifyWhite)
+                        .clipShape(Circle())
+                        .onTapGesture {
+
+                        }
+                }
+                .frame(width: 35, height: 35)
 
                 ScrollView(.horizontal) {
                     HStack(spacing: 8) {
@@ -37,6 +40,7 @@ struct HomeView: View {
                             }
                         }
                     }
+                    .padding(.horizontal, 16)
                 }
                 .scrollIndicators(.hidden)
             }

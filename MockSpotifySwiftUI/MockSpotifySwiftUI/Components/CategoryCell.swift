@@ -15,6 +15,7 @@ struct CategoryCell: View {
     var body: some View {
         Text(title)
             .font(.callout)
+            .frame(minWidth: 35)
             .padding(.vertical, 8)
             .padding(.horizontal, 10)
             .background(isSelected ? .spotifyGreen : .spotifyDarkGray)
