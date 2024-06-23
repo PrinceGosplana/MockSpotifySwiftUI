@@ -11,6 +11,7 @@
 		8A2CA0012C27FF0100E3C019 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A2CA0002C27FF0100E3C019 /* ContentView.swift */; };
 		8A2CA0032C27FF0300E3C019 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8A2CA0022C27FF0300E3C019 /* Assets.xcassets */; };
 		8A2CA0062C27FF0300E3C019 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8A2CA0052C27FF0300E3C019 /* Preview Assets.xcassets */; };
+		8A2CA0102C2801B300E3C019 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A2CA00F2C2801B300E3C019 /* HomeView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +20,7 @@
 		8A2CA0002C27FF0100E3C019 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		8A2CA0022C27FF0300E3C019 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8A2CA0052C27FF0300E3C019 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		8A2CA00F2C2801B300E3C019 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,6 +53,8 @@
 		8A2C9FFD2C27FF0100E3C019 /* MockSpotifySwiftUI */ = {
 			isa = PBXGroup;
 			children = (
+				8A2CA00D2C28019300E3C019 /* Components */,
+				8A2CA00C2C28018800E3C019 /* Core */,
 				8A2C9FFE2C27FF0100E3C019 /* MockSpotifySwiftUIApp.swift */,
 				8A2CA0002C27FF0100E3C019 /* ContentView.swift */,
 				8A2CA0022C27FF0300E3C019 /* Assets.xcassets */,
@@ -65,6 +69,21 @@
 				8A2CA0052C27FF0300E3C019 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		8A2CA00C2C28018800E3C019 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				8A2CA00F2C2801B300E3C019 /* HomeView.swift */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		8A2CA00D2C28019300E3C019 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Components;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,6 +156,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8A2CA0102C2801B300E3C019 /* HomeView.swift in Sources */,
 				8A2CA0012C27FF0100E3C019 /* ContentView.swift in Sources */,
 				8A2C9FFF2C27FF0100E3C019 /* MockSpotifySwiftUIApp.swift in Sources */,
 			);
