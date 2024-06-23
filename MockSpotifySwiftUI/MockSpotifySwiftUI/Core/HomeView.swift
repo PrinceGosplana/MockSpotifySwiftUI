@@ -9,6 +9,8 @@ import SwiftUI
 
 struct HomeView: View {
 
+    @State private var selectedCategory: Category? = nil
+
     var body: some View {
         ZStack {
             Color.spotifyBlack.ignoresSafeArea()
@@ -25,10 +27,11 @@ struct HomeView: View {
 
                 ScrollView(.horizontal) {
                     HStack(spacing: 8) {
-                        ForEach(0..<20) { _ in
-                            Rectangle()
-                                .fill(Color.mint)
-                                .frame(width: 20, height: 20)
+                        ForEach(Category.allCases) { category in
+                            CategoryCell(
+                                title: category.title,
+                                isSelected: category == selectedCategory
+                            )
                         }
                     }
                 }
