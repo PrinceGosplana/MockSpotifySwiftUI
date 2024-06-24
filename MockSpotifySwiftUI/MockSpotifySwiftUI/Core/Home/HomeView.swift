@@ -13,8 +13,24 @@ struct HomeView: View {
         ZStack {
             Color.spotifyBlack.ignoresSafeArea()
             
-            HomeHeader()
+            ScrollView {
+                LazyVStack(spacing: 1, pinnedViews: [.sectionHeaders]) {
+                    Section {
+                        ForEach(0..<20) { _ in
+                            Rectangle()
+                                .fill(.mint)
+                                .frame(width: 200, height: 200)
+                        }
+                    } header: {
+                        HomeHeader()
+                    }
+                }
+                .padding(.top, 8)
+            }
+            .scrollIndicators(.hidden)
+            .clipped()
         }
+        .toolbar(.hidden, for: .navigationBar)
     }
 }
 

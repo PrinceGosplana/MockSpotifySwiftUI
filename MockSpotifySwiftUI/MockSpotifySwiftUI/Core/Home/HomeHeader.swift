@@ -41,6 +41,9 @@ struct HomeHeader: View {
             }
             .scrollIndicators(.hidden)
         }
+        .padding(.vertical, 24)
+        .padding(.leading, 8)
+        .background(.spotifyBlack)
     }
 }
 
