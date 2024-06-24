@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		8A0FC9D92C297BAA000E7A19 /* SpotifyRecentsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A0FC9D82C297BAA000E7A19 /* SpotifyRecentsCell.swift */; };
 		8A0FC9DC2C298035000E7A19 /* View+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A0FC9DB2C298035000E7A19 /* View+Ext.swift */; };
+		8A0FC9DE2C298269000E7A19 /* Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A0FC9DD2C298269000E7A19 /* Product.swift */; };
 		8A1340832C284B82002C8DFD /* CategoryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A1340822C284B82002C8DFD /* CategoryCell.swift */; };
 		8A1340862C284E93002C8DFD /* Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A1340852C284E93002C8DFD /* Category.swift */; };
 		8A1340892C285416002C8DFD /* HomeHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A1340882C285416002C8DFD /* HomeHeader.swift */; };
@@ -23,6 +24,7 @@
 /* Begin PBXFileReference section */
 		8A0FC9D82C297BAA000E7A19 /* SpotifyRecentsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpotifyRecentsCell.swift; sourceTree = "<group>"; };
 		8A0FC9DB2C298035000E7A19 /* View+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+Ext.swift"; sourceTree = "<group>"; };
+		8A0FC9DD2C298269000E7A19 /* Product.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Product.swift; sourceTree = "<group>"; };
 		8A1340822C284B82002C8DFD /* CategoryCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryCell.swift; sourceTree = "<group>"; };
 		8A1340852C284E93002C8DFD /* Category.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Category.swift; sourceTree = "<group>"; };
 		8A1340882C285416002C8DFD /* HomeHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeHeader.swift; sourceTree = "<group>"; };
@@ -58,6 +60,7 @@
 			isa = PBXGroup;
 			children = (
 				8A1340852C284E93002C8DFD /* Category.swift */,
+				8A0FC9DD2C298269000E7A19 /* Product.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -205,6 +208,7 @@
 				8A2CA0012C27FF0100E3C019 /* ContentView.swift in Sources */,
 				8A1340892C285416002C8DFD /* HomeHeader.swift in Sources */,
 				8A0FC9D92C297BAA000E7A19 /* SpotifyRecentsCell.swift in Sources */,
+				8A0FC9DE2C298269000E7A19 /* Product.swift in Sources */,
 				8A2C9FFF2C27FF0100E3C019 /* MockSpotifySwiftUIApp.swift in Sources */,
 				8A1340862C284E93002C8DFD /* Category.swift in Sources */,
 			);
