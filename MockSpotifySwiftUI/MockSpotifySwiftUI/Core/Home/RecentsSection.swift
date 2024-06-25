@@ -16,6 +16,9 @@ struct RecentsSection: View {
         LazyVGrid(columns: Array(repeating: GridItem(.flexible()), count: columnsCount)) {
             ForEach(arrayOfProducts) { product in
                 SpotifyRecentsCell(imageName: product.image, title: product.title)
+                    .asbutton(.press) {
+
+                    }
             }
         }
     }
@@ -24,3 +27,5 @@ struct RecentsSection: View {
 #Preview {
     RecentsSection(columnsCount: 2, arrayOfProducts: Product.mockProducts)
 }
+
+
