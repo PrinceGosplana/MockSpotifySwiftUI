@@ -9,7 +9,7 @@ import SwiftUI
 
 struct HomeView: View {
 
-    let columns = Array(repeating: GridItem(.flexible()), count: 2)
+
 
     var body: some View {
         ZStack {
@@ -18,11 +18,10 @@ struct HomeView: View {
             ScrollView {
                 LazyVStack(spacing: 1, pinnedViews: [.sectionHeaders]) {
                     Section {
-                        LazyVGrid(columns: columns) {
-                            ForEach(Array(Product.mockProducts.prefix(6))) { product in
-                                SpotifyRecentsCell(imageName: product.image, title: product.title)
-                            }
-                        }
+                        RecentsSection(
+                            columnsCount: 2,
+                            arrayOfProducts: Array(Product.mockProducts.prefix(6))
+                        )
                     } header: {
                         HomeHeader()
                     }
