@@ -25,6 +25,7 @@
 		8A2CA0102C2801B300E3C019 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A2CA00F2C2801B300E3C019 /* HomeView.swift */; };
 		8A2CA0122C28051C00E3C019 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A2CA0112C28051C00E3C019 /* User.swift */; };
 		8AF0A0E22C2AE22F00C34038 /* ListRows.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AF0A0E12C2AE22F00C34038 /* ListRows.swift */; };
+		8AF0A0E42C2AE35700C34038 /* NewReleaseSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AF0A0E32C2AE35700C34038 /* NewReleaseSection.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -47,6 +48,7 @@
 		8A2CA00F2C2801B300E3C019 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		8A2CA0112C28051C00E3C019 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		8AF0A0E12C2AE22F00C34038 /* ListRows.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListRows.swift; sourceTree = "<group>"; };
+		8AF0A0E32C2AE35700C34038 /* NewReleaseSection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewReleaseSection.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,6 +86,7 @@
 			children = (
 				8A1340882C285416002C8DFD /* HomeHeader.swift */,
 				8A2CA00F2C2801B300E3C019 /* HomeView.swift */,
+				8AF0A0E32C2AE35700C34038 /* NewReleaseSection.swift */,
 				8AF0A0E12C2AE22F00C34038 /* ListRows.swift */,
 				8A0FC9DF2C29881C000E7A19 /* RecentsSection.swift */,
 			);
@@ -227,6 +230,7 @@
 				8A1C127B2C2AA5BB00FC23DD /* NewReleaseCell.swift in Sources */,
 				8A0FC9DC2C298035000E7A19 /* View+Ext.swift in Sources */,
 				8A2CA0102C2801B300E3C019 /* HomeView.swift in Sources */,
+				8AF0A0E42C2AE35700C34038 /* NewReleaseSection.swift in Sources */,
 				8A2CA0012C27FF0100E3C019 /* ContentView.swift in Sources */,
 				8A1340892C285416002C8DFD /* HomeHeader.swift in Sources */,
 				8A0FC9D92C297BAA000E7A19 /* SpotifyRecentsCell.swift in Sources */,
