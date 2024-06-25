@@ -16,6 +16,7 @@
 		8A1340892C285416002C8DFD /* HomeHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A1340882C285416002C8DFD /* HomeHeader.swift */; };
 		8A1C127B2C2AA5BB00FC23DD /* NewReleaseCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A1C127A2C2AA5BB00FC23DD /* NewReleaseCell.swift */; };
 		8A1C127D2C2AA7E500FC23DD /* NewReleaseCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A1C127C2C2AA7E500FC23DD /* NewReleaseCellViewModel.swift */; };
+		8A1C127F2C2AC36F00FC23DD /* ImageTitleRowCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A1C127E2C2AC36F00FC23DD /* ImageTitleRowCell.swift */; };
 		8A2C9FFF2C27FF0100E3C019 /* MockSpotifySwiftUIApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A2C9FFE2C27FF0100E3C019 /* MockSpotifySwiftUIApp.swift */; };
 		8A2CA0012C27FF0100E3C019 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A2CA0002C27FF0100E3C019 /* ContentView.swift */; };
 		8A2CA0032C27FF0300E3C019 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8A2CA0022C27FF0300E3C019 /* Assets.xcassets */; };
@@ -34,6 +35,7 @@
 		8A1340882C285416002C8DFD /* HomeHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeHeader.swift; sourceTree = "<group>"; };
 		8A1C127A2C2AA5BB00FC23DD /* NewReleaseCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewReleaseCell.swift; sourceTree = "<group>"; };
 		8A1C127C2C2AA7E500FC23DD /* NewReleaseCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewReleaseCellViewModel.swift; sourceTree = "<group>"; };
+		8A1C127E2C2AC36F00FC23DD /* ImageTitleRowCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageTitleRowCell.swift; sourceTree = "<group>"; };
 		8A2C9FFB2C27FF0100E3C019 /* MockSpotifySwiftUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MockSpotifySwiftUI.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8A2C9FFE2C27FF0100E3C019 /* MockSpotifySwiftUIApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockSpotifySwiftUIApp.swift; sourceTree = "<group>"; };
 		8A2CA0002C27FF0100E3C019 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -136,6 +138,7 @@
 				8A1340822C284B82002C8DFD /* CategoryCell.swift */,
 				8A0FC9D82C297BAA000E7A19 /* SpotifyRecentsCell.swift */,
 				8A1C127A2C2AA5BB00FC23DD /* NewReleaseCell.swift */,
+				8A1C127E2C2AC36F00FC23DD /* ImageTitleRowCell.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -211,6 +214,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8A2CA0122C28051C00E3C019 /* User.swift in Sources */,
+				8A1C127F2C2AC36F00FC23DD /* ImageTitleRowCell.swift in Sources */,
 				8A1340832C284B82002C8DFD /* CategoryCell.swift in Sources */,
 				8A1C127B2C2AA5BB00FC23DD /* NewReleaseCell.swift in Sources */,
 				8A0FC9DC2C298035000E7A19 /* View+Ext.swift in Sources */,
