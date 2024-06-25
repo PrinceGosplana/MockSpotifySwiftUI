@@ -24,6 +24,7 @@
 		8A2CA0062C27FF0300E3C019 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8A2CA0052C27FF0300E3C019 /* Preview Assets.xcassets */; };
 		8A2CA0102C2801B300E3C019 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A2CA00F2C2801B300E3C019 /* HomeView.swift */; };
 		8A2CA0122C28051C00E3C019 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A2CA0112C28051C00E3C019 /* User.swift */; };
+		8AF0A0E22C2AE22F00C34038 /* ListRows.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AF0A0E12C2AE22F00C34038 /* ListRows.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -45,6 +46,7 @@
 		8A2CA0052C27FF0300E3C019 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		8A2CA00F2C2801B300E3C019 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		8A2CA0112C28051C00E3C019 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		8AF0A0E12C2AE22F00C34038 /* ListRows.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListRows.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,8 +82,9 @@
 		8A1340872C2853D4002C8DFD /* Home */ = {
 			isa = PBXGroup;
 			children = (
-				8A2CA00F2C2801B300E3C019 /* HomeView.swift */,
 				8A1340882C285416002C8DFD /* HomeHeader.swift */,
+				8A2CA00F2C2801B300E3C019 /* HomeView.swift */,
+				8AF0A0E12C2AE22F00C34038 /* ListRows.swift */,
 				8A0FC9DF2C29881C000E7A19 /* RecentsSection.swift */,
 			);
 			path = Home;
@@ -216,6 +219,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8AF0A0E22C2AE22F00C34038 /* ListRows.swift in Sources */,
 				8A2CA0122C28051C00E3C019 /* User.swift in Sources */,
 				8A1C127F2C2AC36F00FC23DD /* ImageTitleRowCell.swift in Sources */,
 				8A1C12812C2AC8A700FC23DD /* ProductRow.swift in Sources */,

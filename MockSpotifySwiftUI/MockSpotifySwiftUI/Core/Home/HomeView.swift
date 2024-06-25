@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct HomeView: View {
-
+    
     var body: some View {
         ZStack {
             Color.spotifyBlack.ignoresSafeArea()
@@ -21,34 +21,12 @@ struct HomeView: View {
                             arrayOfProducts: Array(Product.mockProducts.prefix(6))
                         )
                         .padding(.horizontal, 16)
-
+                        
                         newReleaseSection()
-                        .padding(.top, 18)
-
+                            .padding(.top, 18)
+                        
                         VStack(spacing: 8) {
-                            ForEach(ProductRow.mockRows) { row in
-                                VStack(spacing: 8) {
-                                    Text(row.title)
-                                        .font(.title)
-                                        .fontWeight(.semibold)
-                                        .foregroundStyle(.spotifyWhite)
-                                        .frame(maxWidth: .infinity, alignment: .leading)
-                                        .padding(.leading, 16)
-
-                                    ScrollView(.horizontal) {
-                                        HStack(alignment: .top, spacing: 16) {
-                                            ForEach(row.products) { product in
-                                                ImageTitleRowCell(
-                                                    imageSize: 120,
-                                                    imageName: product.image,
-                                                    title: product.title
-                                                )
-                                            }
-                                        }
-                                        .padding(.horizontal, 16)
-                                    }
-                                }
-                            }
+                            ListRows(productRows: ProductRow.mockRows)
                         }
                     } header: {
                         HomeHeader()
@@ -61,7 +39,7 @@ struct HomeView: View {
         }
         .toolbar(.hidden, for: .navigationBar)
     }
-
+    
     private func newReleaseSection() -> some View {
         NewReleaseCell(
             viewModel: NewReleaseCellViewModel(
@@ -79,15 +57,15 @@ struct HomeView: View {
             )
         )
     }
-
+    
     private func onAddToPlaylistPressed() {
         print("onAddToPlaylistPressed")
     }
-
+    
     private func onPlayPressed() {
         print("onPlayPressed")
     }
-
+    
 }
 
 #Preview {
