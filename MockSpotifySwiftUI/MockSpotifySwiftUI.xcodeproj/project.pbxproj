@@ -28,6 +28,7 @@
 		8AF0A0E42C2AE35700C34038 /* NewReleaseSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AF0A0E32C2AE35700C34038 /* NewReleaseSection.swift */; };
 		8AF0A0E62C2AE8DE00C34038 /* ButtonStyleViewModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AF0A0E52C2AE8DE00C34038 /* ButtonStyleViewModifier.swift */; };
 		8AF0A0E82C2AE90000C34038 /* ButtonType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AF0A0E72C2AE90000C34038 /* ButtonType.swift */; };
+		8AF1D9B52C2F3A3C008E9541 /* PlaylistView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AF1D9B42C2F3A3C008E9541 /* PlaylistView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -53,6 +54,7 @@
 		8AF0A0E32C2AE35700C34038 /* NewReleaseSection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewReleaseSection.swift; sourceTree = "<group>"; };
 		8AF0A0E52C2AE8DE00C34038 /* ButtonStyleViewModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonStyleViewModifier.swift; sourceTree = "<group>"; };
 		8AF0A0E72C2AE90000C34038 /* ButtonType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonType.swift; sourceTree = "<group>"; };
+		8AF1D9B42C2F3A3C008E9541 /* PlaylistView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaylistView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -140,6 +142,7 @@
 			isa = PBXGroup;
 			children = (
 				8A1340872C2853D4002C8DFD /* Home */,
+				8AF1D9B42C2F3A3C008E9541 /* PlaylistView.swift */,
 			);
 			path = Core;
 			sourceTree = "<group>";
@@ -242,6 +245,7 @@
 				8A0FC9D92C297BAA000E7A19 /* SpotifyRecentsCell.swift in Sources */,
 				8A1C127D2C2AA7E500FC23DD /* NewReleaseCellViewModel.swift in Sources */,
 				8A0FC9DE2C298269000E7A19 /* Product.swift in Sources */,
+				8AF1D9B52C2F3A3C008E9541 /* PlaylistView.swift in Sources */,
 				8A2C9FFF2C27FF0100E3C019 /* MockSpotifySwiftUIApp.swift in Sources */,
 				8A1340862C284E93002C8DFD /* Category.swift in Sources */,
 				8AF0A0E82C2AE90000C34038 /* ButtonType.swift in Sources */,
