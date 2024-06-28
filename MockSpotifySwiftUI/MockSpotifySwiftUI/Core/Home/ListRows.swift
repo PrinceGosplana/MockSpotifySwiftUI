@@ -28,6 +28,9 @@ struct ListRows: View {
                                 imageName: product.image,
                                 title: product.title
                             )
+                            .asButton {
+                                
+                            }
                         }
                     }
                     .padding(.horizontal, 16)
