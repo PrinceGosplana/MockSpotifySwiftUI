@@ -60,7 +60,6 @@ struct NewReleaseCell: View {
                             }
                             .offset(x: -4)
                             .frame(maxWidth: .infinity, alignment: .leading)
-                            .background(.blue)
 
                         Image(systemName: "play.circle.fill")
                             .foregroundStyle(.spotifyWhite)
