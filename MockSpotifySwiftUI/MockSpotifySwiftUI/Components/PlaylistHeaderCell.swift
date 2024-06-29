@@ -15,9 +15,13 @@ struct PlaylistHeaderCell: View {
     var shadowColor: Color = .spotifyBlack.opacity(0.8)
 
     var body: some View {
-        Image(imageName)
-            .resizable()
-            .scaledToFill()
+        Rectangle()
+            .opacity(0)
+            .overlay(
+                Image(imageName)
+                    .resizable()
+                    .scaledToFill()
+            )
             .overlay(alignment: .bottomLeading) {
                 VStack(alignment: .leading, spacing: 8) {
                     Text(subtitle)
@@ -34,7 +38,6 @@ struct PlaylistHeaderCell: View {
                 )
             }
             .asStretchyHeader(startingHeight: 300)
-            .frame(height: 300)
     }
 }
 
