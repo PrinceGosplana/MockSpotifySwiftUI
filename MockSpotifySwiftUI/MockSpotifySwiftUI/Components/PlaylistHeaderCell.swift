@@ -8,11 +8,11 @@
 import SwiftUI
 
 struct PlaylistHeaderCell: View {
-
-    var title: String = "Some playlist title goes here"
-    var subtitle: String = "Subtitle goes here"
-    var imageName: String = "PreviewSample5Image"
-    var shadowColor: Color = .spotifyBlack.opacity(0.8)
+    let height: CGFloat = 300
+    let title: String = "Some playlist title goes here"
+    let subtitle: String = "Subtitle goes here"
+    let imageName: String = "PreviewSample5Image"
+    let shadowColor: Color = .spotifyBlack.opacity(0.8)
 
     var body: some View {
         Rectangle()
@@ -37,7 +37,7 @@ struct PlaylistHeaderCell: View {
                     LinearGradient(colors: [shadowColor.opacity(0), shadowColor], startPoint: .top, endPoint: .bottom)
                 )
             }
-            .asStretchyHeader(startingHeight: 300)
+            .asStretchyHeader(startingHeight: height)
     }
 }
 
