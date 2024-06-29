@@ -9,11 +9,11 @@ import SwiftUI
 
 struct NewReleaseSection: View {
 
-    let viewModel: NewReleaseCellViewModel
+    let viewModel: NewReleaseModel
 
     var body: some View {
         NewReleaseCell(
-            viewModel: NewReleaseCellViewModel(
+            viewModel: NewReleaseModel(
                 imageName: viewModel.imageName,
                 headline: viewModel.headline,
                 subheadline: viewModel.subheadline,
@@ -27,5 +27,5 @@ struct NewReleaseSection: View {
 }
 
 #Preview {
-    NewReleaseSection(viewModel: NewReleaseCellViewModel.mockData)
+    NewReleaseSection(viewModel: NewReleaseModel.mockData)
 }

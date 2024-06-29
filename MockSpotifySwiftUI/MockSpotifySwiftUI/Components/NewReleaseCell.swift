@@ -9,7 +9,7 @@ import SwiftUI
 
 struct NewReleaseCell: View {
 
-    let viewModel: NewReleaseCellViewModel
+    let viewModel: NewReleaseModel
 
     var body: some View {
         VStack(spacing: 16) {
@@ -81,7 +81,7 @@ struct NewReleaseCell: View {
 #Preview {
     ZStack {
         Color.spotifyBlack.ignoresSafeArea()
-        NewReleaseCell(viewModel: NewReleaseCellViewModel.mockData)
+        NewReleaseCell(viewModel: NewReleaseModel.mockData)
             .padding()
     }
 }

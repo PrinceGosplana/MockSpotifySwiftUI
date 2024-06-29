@@ -40,13 +40,13 @@ struct HomeView: View {
         .toolbar(.hidden, for: .navigationBar)
     }
 
-    private func newReleaseSection() -> NewReleaseCellViewModel {
-        NewReleaseCellViewModel(
-            imageName: NewReleaseCellViewModel.mockData.imageName,
-            headline: NewReleaseCellViewModel.mockData.headline,
-            subheadline: NewReleaseCellViewModel.mockData.subheadline,
-            title: NewReleaseCellViewModel.mockData.title,
-            subtitle: NewReleaseCellViewModel.mockData.subtitle,
+    private func newReleaseSection() -> NewReleaseModel {
+        NewReleaseModel(
+            imageName: NewReleaseModel.mockData.imageName,
+            headline: NewReleaseModel.mockData.headline,
+            subheadline: NewReleaseModel.mockData.subheadline,
+            title: NewReleaseModel.mockData.title,
+            subtitle: NewReleaseModel.mockData.subtitle,
             onAddToPlaylistPressed: {
                 onAddToPlaylistPressed()
             },

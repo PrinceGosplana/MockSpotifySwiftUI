@@ -1,11 +1,11 @@
 //
-//  NewReleaseCellViewModel.swift
+//  NewReleaseModel.swift
 //  MockSpotifySwiftUI
 //
 //  Created by Oleksandr Isaiev on 25.06.2024.
 //
 
-struct NewReleaseCellViewModel {
+struct NewReleaseModel {
     let imageName: String
     let headline: String?
     let subheadline: String?
@@ -16,8 +16,8 @@ struct NewReleaseCellViewModel {
     var onPlayPressed: (() -> Void)? = nil
 }
 
-extension NewReleaseCellViewModel {
-    static var mockData: NewReleaseCellViewModel {
+extension NewReleaseModel {
+    static var mockData: NewReleaseModel {
         .init(
             imageName: "SpotlightImage",
             headline: "New release from",
