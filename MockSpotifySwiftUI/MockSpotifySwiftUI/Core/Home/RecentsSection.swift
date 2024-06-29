@@ -15,10 +15,13 @@ struct RecentsSection: View {
     var body: some View {
         LazyVGrid(columns: Array(repeating: GridItem(.flexible()), count: columnsCount)) {
             ForEach(arrayOfProducts) { product in
-                SpotifyRecentsCell(imageName: product.image, title: product.title)
-                    .asbutton(.press) {
+                SpotifyRecentsCell(
+                    imageName: product.thumbnail,
+                    title: product.title
+                )
+                .asbutton(.press) {
 
-                    }
+                }
             }
         }
     }

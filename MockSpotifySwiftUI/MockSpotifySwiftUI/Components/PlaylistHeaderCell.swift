@@ -8,11 +8,11 @@
 import SwiftUI
 
 struct PlaylistHeaderCell: View {
-    let height: CGFloat = 300
-    let title: String = "Some playlist title goes here"
-    let subtitle: String = "Subtitle goes here"
-    let imageName: String = "PreviewSample5Image"
-    let shadowColor: Color = .spotifyBlack.opacity(0.8)
+    var height: CGFloat = 300
+    var title: String = "Some playlist title goes here"
+    var subtitle: String = "Subtitle goes here"
+    var imageName: String = "PreviewSample5Image"
+    var shadowColor: Color = .spotifyBlack.opacity(0.8)
 
     var body: some View {
         Rectangle()

@@ -25,7 +25,7 @@ struct ListRows: View {
                         ForEach(row.products) { product in
                             ImageTitleRowCell(
                                 imageSize: 120,
-                                imageName: product.image,
+                                imageName: product.thumbnail,
                                 title: product.title
                             )
                             .asButton {
