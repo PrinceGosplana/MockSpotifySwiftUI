@@ -23,6 +23,18 @@ struct PlaylistView: View {
                         subtitle: product.brand,
                         imageName: product.thumbnail
                     )
+
+                    PlaylistDescriptionCell(
+                        descriptionText: product.description,
+                        userName: "Terry",
+                        subheadline: product.category,
+                        onAddToPlaylistPressed: { },
+                        onDownloadPressed: { },
+                        onSharePressed: { },
+                        onEllipsisPressed: { },
+                        onShufflePressed: { },
+                        onPlayPressed: { })
+                    .padding(.horizontal, 16)
                 }
             }
             .scrollIndicators(.hidden)
