@@ -29,6 +29,7 @@
 		8AF0A0E62C2AE8DE00C34038 /* ButtonStyleViewModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AF0A0E52C2AE8DE00C34038 /* ButtonStyleViewModifier.swift */; };
 		8AF0A0E82C2AE90000C34038 /* ButtonType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AF0A0E72C2AE90000C34038 /* ButtonType.swift */; };
 		8AF1D9B52C2F3A3C008E9541 /* PlaylistView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AF1D9B42C2F3A3C008E9541 /* PlaylistView.swift */; };
+		8AF8F38D2C2FE37A004F69AF /* PlaylistHeaderCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AF8F38C2C2FE37A004F69AF /* PlaylistHeaderCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -55,6 +56,7 @@
 		8AF0A0E52C2AE8DE00C34038 /* ButtonStyleViewModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonStyleViewModifier.swift; sourceTree = "<group>"; };
 		8AF0A0E72C2AE90000C34038 /* ButtonType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonType.swift; sourceTree = "<group>"; };
 		8AF1D9B42C2F3A3C008E9541 /* PlaylistView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaylistView.swift; sourceTree = "<group>"; };
+		8AF8F38C2C2FE37A004F69AF /* PlaylistHeaderCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaylistHeaderCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -157,6 +159,7 @@
 				8A1C127E2C2AC36F00FC23DD /* ImageTitleRowCell.swift */,
 				8AF0A0E52C2AE8DE00C34038 /* ButtonStyleViewModifier.swift */,
 				8AF0A0E72C2AE90000C34038 /* ButtonType.swift */,
+				8AF8F38C2C2FE37A004F69AF /* PlaylistHeaderCell.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -235,6 +238,7 @@
 				8A2CA0122C28051C00E3C019 /* User.swift in Sources */,
 				8A1C127F2C2AC36F00FC23DD /* ImageTitleRowCell.swift in Sources */,
 				8A1C12812C2AC8A700FC23DD /* ProductRow.swift in Sources */,
+				8AF8F38D2C2FE37A004F69AF /* PlaylistHeaderCell.swift in Sources */,
 				8A1340832C284B82002C8DFD /* CategoryCell.swift in Sources */,
 				8A1C127B2C2AA5BB00FC23DD /* NewReleaseCell.swift in Sources */,
 				8A0FC9DC2C298035000E7A19 /* View+Ext.swift in Sources */,
