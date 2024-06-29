@@ -33,6 +33,7 @@ struct PlaylistHeaderCell: View {
                     LinearGradient(colors: [shadowColor.opacity(0), shadowColor], startPoint: .top, endPoint: .bottom)
                 )
             }
+            .asStretchyHeader(startingHeight: 300)
             .frame(height: 300)
     }
 }

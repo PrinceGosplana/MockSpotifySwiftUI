@@ -44,4 +44,8 @@ extension View {
             }
         }
     }
+
+    func asStretchyHeader(startingHeight: CGFloat) -> some View {
+        modifier(StretchyHeaderViewModifier(startingHeight: startingHeight))
+    }
 }
