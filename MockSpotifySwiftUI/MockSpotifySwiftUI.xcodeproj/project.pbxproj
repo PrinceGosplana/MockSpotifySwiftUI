@@ -85,6 +85,7 @@
 		8A1340842C284E80002C8DFD /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				8A2CA0112C28051C00E3C019 /* User.swift */,
 				8A1340852C284E93002C8DFD /* Category.swift */,
 				8A1C127C2C2AA7E500FC23DD /* NewReleaseModel.swift */,
 				8A0FC9DD2C298269000E7A19 /* Product.swift */,
@@ -131,7 +132,6 @@
 				8A2CA0002C27FF0100E3C019 /* ContentView.swift */,
 				8A2CA0022C27FF0300E3C019 /* Assets.xcassets */,
 				8A2CA0042C27FF0300E3C019 /* Preview Content */,
-				8A2CA0112C28051C00E3C019 /* User.swift */,
 			);
 			path = MockSpotifySwiftUI;
 			sourceTree = "<group>";

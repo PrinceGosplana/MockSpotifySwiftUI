@@ -30,7 +30,7 @@ extension User {
         email: "boJack@test.com",
         phone: "1111",
         userName: "HorsingAround",
-        image: "profile-picture",
+        image: "mrBoJackHorseman",
         height: 180,
         weight: 82
     )

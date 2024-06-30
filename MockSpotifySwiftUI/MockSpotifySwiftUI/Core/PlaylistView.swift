@@ -35,6 +35,7 @@ struct PlaylistView: View {
                         onShufflePressed: { },
                         onPlayPressed: { })
                     .padding(.horizontal, 16)
+                    
                 }
             }
             .scrollIndicators(.hidden)
