@@ -11,6 +11,7 @@ struct PlaylistView: View {
 
     let product: Product = .mockProducts[0]
     var user: User = .mockUser
+    @State private var products: [Product] = []
 
     var body: some View {
         ZStack {
@@ -37,10 +38,28 @@ struct PlaylistView: View {
                         onPlayPressed: { })
                     .padding(.horizontal, 16)
 
+                    ForEach(products) { product in
+                        SongRowCell(
+                            imageSize: 100,
+                            imageName: product.thumbnail,
+                            title: product.title,
+                            subtitle: product.brand,
+                            onCellPressed: {},
+                            onEllipsisPressed: {}
+                        )
+                    }
                 }
             }
             .scrollIndicators(.hidden)
         }
+        .task {
+            await getData()
+        }
+        .toolbar(.hidden, for: .navigationBar)
+    }
+
+    private func getData() async {
+            products = Product.mockProducts
     }
 }
 
