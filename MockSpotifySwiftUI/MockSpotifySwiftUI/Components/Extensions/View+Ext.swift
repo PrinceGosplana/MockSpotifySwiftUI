@@ -48,4 +48,31 @@ extension View {
     func asStretchyHeader(startingHeight: CGFloat) -> some View {
         modifier(StretchyHeaderViewModifier(startingHeight: startingHeight))
     }
+
+    func readingFrame(coordinateSpace: CoordinateSpace = .global, onChange: @escaping (_ frame: CGRect) -> ()) -> some View {
+        background(FrameReader(coordinateSpace: coordinateSpace, onChange: onChange))
+    }
+}
+
+private struct FrameReader: View {
+
+    let coordinateSpace: CoordinateSpace
+    let onChange: (_ frame: CGRect) -> Void
+
+    init(coordinateSpace: CoordinateSpace, onChange: @escaping (_: CGRect) -> Void) {
+        self.coordinateSpace = coordinateSpace
+        self.onChange = onChange
+    }
+
+    var body: some View {
+        GeometryReader { geo in
+            Text("")
+                .frame(maxWidth: .infinity, maxHeight: .infinity)
+                .onAppear {
+                    onChange(geo.frame(in: coordinateSpace))
+                }
+                .onChange(of: geo.frame(in: coordinateSpace), perform: onChange)
+        }
+        .frame(maxWidth: .infinity, maxHeight: .infinity)
+    }
 }
