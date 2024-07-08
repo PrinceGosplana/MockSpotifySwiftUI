@@ -9,10 +9,13 @@ import SwiftUI
 
 struct PlaylistView: View {
 
-    let product: Product = .mockProducts[0]
-    var user: User = .mockUser
+    let product: Product
+    let user: User
+    
     @State private var products: [Product] = []
     @State private var showHeader: Bool = false
+    @EnvironmentObject var router: Router
+    @Environment(\.dismiss) var dismiss
 
     var body: some View {
         ZStack {
@@ -72,7 +75,8 @@ struct PlaylistView: View {
                     .background(showHeader ? .black.opacity(0.001) : .spotifyGray.opacity(0.7))
                     .clipShape(Circle())
                     .onTapGesture {
-
+//                        dismiss()
+                        router.navigateBack()
                     }
                     .padding(.leading, 16)
                     .frame(maxWidth: .infinity, alignment: .leading)
@@ -93,5 +97,6 @@ struct PlaylistView: View {
 }
 
 #Preview {
-    PlaylistView()
+    PlaylistView(product: Product.mockProducts[0], user: User.mockUser)
+        .environmentObject(Router())
 }

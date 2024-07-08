@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8A0C9C312C3ACA5A007487DA /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A0C9C302C3ACA5A007487DA /* Router.swift */; };
 		8A0FC9D92C297BAA000E7A19 /* SpotifyRecentsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A0FC9D82C297BAA000E7A19 /* SpotifyRecentsCell.swift */; };
 		8A0FC9DC2C298035000E7A19 /* View+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A0FC9DB2C298035000E7A19 /* View+Ext.swift */; };
 		8A0FC9DE2C298269000E7A19 /* Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A0FC9DD2C298269000E7A19 /* Product.swift */; };
@@ -36,6 +37,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		8A0C9C302C3ACA5A007487DA /* Router.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
 		8A0FC9D82C297BAA000E7A19 /* SpotifyRecentsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpotifyRecentsCell.swift; sourceTree = "<group>"; };
 		8A0FC9DB2C298035000E7A19 /* View+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+Ext.swift"; sourceTree = "<group>"; };
 		8A0FC9DD2C298269000E7A19 /* Product.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Product.swift; sourceTree = "<group>"; };
@@ -151,6 +153,7 @@
 			children = (
 				8A1340872C2853D4002C8DFD /* Home */,
 				8AF1D9B42C2F3A3C008E9541 /* PlaylistView.swift */,
+				8A0C9C302C3ACA5A007487DA /* Router.swift */,
 			);
 			path = Core;
 			sourceTree = "<group>";
@@ -246,6 +249,7 @@
 				8AF0A0E22C2AE22F00C34038 /* ListRows.swift in Sources */,
 				8A2CA0122C28051C00E3C019 /* User.swift in Sources */,
 				8A1C127F2C2AC36F00FC23DD /* ImageTitleRowCell.swift in Sources */,
+				8A0C9C312C3ACA5A007487DA /* Router.swift in Sources */,
 				8A1C12812C2AC8A700FC23DD /* ProductRow.swift in Sources */,
 				8AF8F38D2C2FE37A004F69AF /* PlaylistHeaderCell.swift in Sources */,
 				8A1340832C284B82002C8DFD /* CategoryCell.swift in Sources */,

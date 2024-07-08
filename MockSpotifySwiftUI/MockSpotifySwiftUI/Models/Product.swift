@@ -7,8 +7,8 @@
 
 import Foundation
 
-struct Product: Identifiable {
-    let id = UUID()
+struct Product: Identifiable, Codable, Hashable {
+    let id: UUID
     let title: String
     let description: String
     let price: Int
@@ -25,6 +25,7 @@ extension Product {
     static var mockProducts: [Product] {
         [
             .init(
+                id: UUID(),
                 title: "iPhone",
                 description: "Test iPhone",
                 price: 980,
@@ -37,6 +38,7 @@ extension Product {
                 images: ["PreviewSample1Image", "PreviewSample3Image"]
             ),
             .init(
+                id: UUID(),
                 title: "MacBook",
                 description: "Test MacBook",
                 price:2000,
@@ -49,6 +51,7 @@ extension Product {
                 images: ["PreviewSample2Image", "PreviewSample3Image"]
             ),
             .init(
+                id: UUID(),
                 title: "MacMini",
                 description: "Test MacMini",
                 price: 1050,
@@ -61,6 +64,7 @@ extension Product {
                 images: ["PreviewSample3Image", "PreviewSample4Image"]
             ),
             .init(
+                id: UUID(),
                 title: "iWatch",
                 description: "Test iWatch",
                 price: 690,
@@ -73,6 +77,7 @@ extension Product {
                 images: ["PreviewSample4Image", "PreviewSample5Image"]
             ),
             .init(
+                id: UUID(),
                 title: "iMac",
                 description: "Test iMac",
                 price: 1200,
@@ -85,6 +90,7 @@ extension Product {
                 images: ["PreviewSample5Image", "PreviewSample6Image"]
             ),
             .init(
+                id: UUID(),
                 title: "MacStudio",
                 description: "Test MacStudio",
                 price: 1800,
@@ -97,6 +103,7 @@ extension Product {
                 images: ["PreviewSample6Image", "PreviewSample7Image"]
             ),
             .init(
+                id: UUID(),
                 title: "Keyboard",
                 description: "Test Keyboard",
                 price: 600,
@@ -109,6 +116,7 @@ extension Product {
                 images: ["PreviewSample7Image", "PreviewSample8Image"]
             ),
             .init(
+                id: UUID(),
                 title: "Magic Mouse",
                 description: "Test Magic Mouse",
                 price: 400,

@@ -8,8 +8,19 @@
 import SwiftUI
 
 struct ContentView: View {
+    @ObservedObject var router = Router()
+
     var body: some View {
-        HomeView()
+        NavigationStack(path: $router.navPaths) {
+            HomeView()
+                .navigationDestination(for: Router.Destination.self) { destination in
+                    switch destination {
+                    case .recently(let product, let user):
+                        PlaylistView(product: product, user: user)
+                    }
+                }
+        }
+        .environmentObject(router)
     }
 }
 

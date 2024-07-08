@@ -12,6 +12,8 @@ struct RecentsSection: View {
     let columnsCount: Int
     let arrayOfProducts: [Product]
 
+    @EnvironmentObject var router: Router
+
     var body: some View {
         LazyVGrid(columns: Array(repeating: GridItem(.flexible()), count: columnsCount)) {
             ForEach(arrayOfProducts) { product in
@@ -20,7 +22,7 @@ struct RecentsSection: View {
                     title: product.title
                 )
                 .asbutton(.press) {
-
+                    router.navigate(to: .recently(product: product, user: User.mockUser))
                 }
             }
         }
@@ -29,6 +31,7 @@ struct RecentsSection: View {
 
 #Preview {
     RecentsSection(columnsCount: 2, arrayOfProducts: Product.mockProducts)
+        .environmentObject(Router())
 }
 
 
